@@ -1,0 +1,24 @@
+.main{
+  color: darkslateblue;
+  padding: 10px;
+  margin: 10px;
+  width: 350px;
+  height: 350px;
+}
+.flex-container {
+  display: flex;
+
+}
+.flex-container > div {
+  background-color: #f1f122;
+  
+}
+.flex-container > div > div.result {
+  background-color: #f1f1f1;
+  border: 3px dashed red;
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+}

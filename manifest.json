@@ -1,0 +1,23 @@
+{
+  "name": "Days Countdown",
+  "version": "1.0.0",
+  "description": "Days Countdown helps you count days, weeks untill the input date.",
+  "manifest_version": 3,
+  "author": "Jyoti Sharma",
+  "action":{
+      "permissions": ["*://*/*"],
+      "default_popup": "index.html",
+      "default_title": "Days Countdown",
+      "default_icon": "calender.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts":[
+      {
+        "css": [ "index.css" ],
+        "matches" : ["http://*/*", "https://*/*"],
+        "js": ["script.js"]
+      }
+    ]
+}
